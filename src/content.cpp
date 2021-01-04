@@ -174,7 +174,7 @@ void Content::load()
 	}
 
 	// load the rooms
-	for (auto& it : Directory::enumerate(path() + "/map", false))
+	for (auto& it : Directory::enumerate(path() + "map/", false))
 	{
 		if (!it.ends_with(".png"))
 			continue;
